@@ -22,34 +22,14 @@
         <button class="btn" id="btn-add">Add New Book</button>
     </div>
     <div id="books" class="container grid">
-        <div class="book">
+        <!--<div class="book">
             <p id="book-title">Title</p>
             <p id="book-author">Author</p>
             <p id="book-pages">321 pages</p>
             <button class="btn" id="btn-read">READ</button>
             <button class="btn" id="btn-remove">REMOVE</button>
-        </div>
-        <div class="book">
-            <p id="book-title">Title</p>
-            <p id="book-author">Author</p>
-            <p id="book-pages">321 pages</p>
-            <button class="btn" id="btn-read">READ</button>
-            <button class="btn" id="btn-remove">REMOVE</button>
-        </div>
-        <div class="book">
-            <p id="book-title">Title</p>
-            <p id="book-author">Author</p>
-            <p id="book-pages">321 pages</p>
-            <button class="btn" id="btn-read">READ</button>
-            <button class="btn" id="btn-remove">REMOVE</button>
-        </div>
-        <div class="book">
-            <p id="book-title">Title</p>
-            <p id="book-author">Author</p>
-            <p id="book-pages">321 pages</p>
-            <button class="btn" id="btn-read">READ</button>
-            <button class="btn" id="btn-remove">REMOVE</button>
-        </div>
+        </div>-->
+
     </div>
     <div id="fixed-btn-container">
         <button class="btn" id="fixed-add-btn">
@@ -62,6 +42,27 @@
                         class="fab fa-github fa-1x"></i></a></p>
         </div>
     </footer>
+
+    <div id=overlay></div>
+
+
+    <div id="form">
+        <form>
+            <legend>Add New Book</legend>
+            <input type="text" id="input-title" placeholder="Title" required>
+            <input type="text" id="input-author" placeholder="Author" required>
+            <input type="number" id="input-pages" placeholder="Pages" required>
+            <div id="div-read">
+                <label for="input-read">Have you read it?</label>
+                <input type="checkbox" id="input-read" name="input-read">
+            </div>
+            <div id="sumbit">
+                <button type="sumbit" id="btn-submit"class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
 </body>
 
 </html>
