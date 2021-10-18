@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -19,35 +20,35 @@
         </div>
     </header>
     <div class="container flex">
-        <button class="btn" id="btn-add">Add New Book</button>
+        <button class="btn btn-add-group" id="btn-add">Add New Book</button>
     </div>
     <div id="books" class="container grid">
         <!--<div class="book">
             <p id="book-title">Title</p>
             <p id="book-author">Author</p>
             <p id="book-pages">321 pages</p>
-            <button class="btn" id="btn-read">READ</button>
-            <button class="btn" id="btn-remove">REMOVE</button>
-        </div>-->
+            <button class="btn btn-read">READ</button>
+            <button class="btn btn-remove">REMOVE</button>
+        </div>  -->
 
     </div>
     <div id="fixed-btn-container">
-        <button class="btn" id="fixed-add-btn">
+        <button class="btn btn-add-group" id="fixed-add-btn">
             +
         </button>
     </div>
     <footer>
         <div class="container flex">
-            <p>Copyright &copy; 2021 PetarR21 <a href="https://github.com/PetarR21/odin-library" target="_blank"><i
-                        class="fab fa-github fa-1x"></i></a></p>
+            <p>Copyright &copy; 2021 PetarR21 <a href="https://github.com/PetarR21/odin-library" target="_blank">
+                <i class="fab fa-github fa-1x"></i></a></p>
         </div>
     </footer>
 
-    <div id=overlay></div>
+    <div id="overlay" class="hidden"></div>
 
 
-    <div id="form">
-        <form>
+    <div id="form" class="hidden">
+        <form action="" method="get">
             <legend>Add New Book</legend>
             <input type="text" id="input-title" placeholder="Title" required>
             <input type="text" id="input-author" placeholder="Author" required>
@@ -57,7 +58,7 @@
                 <input type="checkbox" id="input-read" name="input-read">
             </div>
             <div id="sumbit">
-                <button type="sumbit" id="btn-submit"class="btn">Submit</button>
+                <button type="sumbit" id="btn-submit" class="btn">Submit</button>
             </div>
         </form>
     </div>

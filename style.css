@@ -67,14 +67,12 @@ header h1 {
 .book {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
-    padding: 10px;
-    min-height: 400px;
-    min-width: 250px;
-    max-width: 350px;
-    width: 300px;
+    gap: 20px;
+    padding: 30px;
+    width: 350px;
+    height: 600px;
     border: 3px #033d68 solid;
     background-color: #f8f3c9;
     border-radius: 5px;
@@ -83,6 +81,9 @@ header h1 {
 
 .book p {
     font-size: 26px;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .book .btn {
@@ -96,7 +97,7 @@ header h1 {
     cursor: pointer;
 }
 
-/* Books -end*/
+/* Books - end*/
 
 /* Footer - start */
 
@@ -212,7 +213,7 @@ form input[type="text"], input[type="number"] {
     padding-left: 5px;
     font-family: 'Yellowtail';
     color: var(--secondary);
-    border: 1px solid #033d68;
+    border: 2px solid #033d68;
     background-color: #EFEFEF;
 }
 
@@ -270,7 +271,8 @@ form input[type="text"]:focus, input[type="number"]:focus {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
     gap: 75px;
 }
 
@@ -290,6 +292,10 @@ form input[type="text"]:focus, input[type="number"]:focus {
 
 .hidden {
     display: none;
+}
+
+.active{
+    display: initial;
 }
 
 /* Utilities - end*/
