@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Resets - end*/
 
 /* Variables - start */
@@ -46,18 +50,26 @@ header h1 {
     cursor: pointer;
 }
 
-
+#btn-add:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
 
 /* Header - end */
 
 /* Books - start*/
+
+#books {
+    margin: 75px auto;
+    min-height: 550px;
+}
 
 .book {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
     padding: 10px;
     min-height: 400px;
     min-width: 250px;
@@ -65,17 +77,18 @@ header h1 {
     width: 300px;
     border: 3px #033d68 solid;
     background-color: #f8f3c9;
+    border-radius: 5px;
     color: #033d68;
 }
 
 .book p {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .book .btn {
     padding: 10px 20px;
-    width: 150px;
-    height: 45px;
+    width: 160px;
+    height: 50px;
     font-size: 16px;
     background-color: #f8dbc9;
     color: #033d68;
@@ -85,7 +98,63 @@ header h1 {
 
 /* Books -end*/
 
-/* Utilities - end*/
+/* Footer - start */
+
+footer {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: var(--secondary);
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+footer a {
+    color: var(--secondary);
+}
+
+footer i:hover {
+    -webkit-animation: spin 0.5s linear 1;
+    -moz-animation: spin 0.5s linear 1;
+    animation: spin 0.5s linear 1;
+}
+
+/* Footer - end */
+
+/*Fixed add button - start*/
+
+#fixed-btn-container {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+#fixed-add-btn {
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    border: none;
+    border: 3px solid #033d68;
+    font-size: 30px;
+    font-family: 'sans-serif';
+    font-weight: bold;
+}
+
+#fixed-add-btn:hover {
+    -webkit-animation: spin-180 0.4s ease-in 1;
+    -moz-animation: spin-180 0.4s ease-in 1;
+    animation: spin-180 0.4s ease-in 1;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+/*Fixed add button - end*/
+
+/* Utilities - start*/
 
 .flex {
     display: flex;
@@ -98,6 +167,12 @@ header h1 {
     height: 100%;
     margin: 0 auto;
     padding: 0 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
 }
 
 .btn {
@@ -115,3 +190,45 @@ header h1 {
 }
 
 /* Utilities - end*/
+
+/* Keyframes - start */
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin-180 {
+    100% {
+        -moz-transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes spin-180 {
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes spin-180 {
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+/* Keyframes - end */
