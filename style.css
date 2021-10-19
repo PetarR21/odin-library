@@ -61,7 +61,6 @@ header h1 {
 
 #books {
     margin: 75px auto;
-    min-height: 550px;
 }
 
 .book {
@@ -69,10 +68,10 @@ header h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     padding: 30px;
-    width: 350px;
-    height: 600px;
+    min-width: 350px;
+    min-height: 400px;
     border: 3px #033d68 solid;
     background-color: #f8f3c9;
     border-radius: 5px;
@@ -83,7 +82,8 @@ header h1 {
     font-size: 26px;
     text-align: center;
     width: 100%;
-    height: auto;
+    min-height: 30px;
+    overflow: hidden;
 }
 
 .book .btn {
@@ -103,6 +103,11 @@ header h1 {
 
 footer {
     margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
 }
 
 footer p {
@@ -206,6 +211,17 @@ form legend {
     font-size: 40px;
 }
 
+#input-title {
+    display: block;
+}
+
+#title-warning {
+    color: red;
+    width: 285px;
+    text-align: start;
+    margin-top: 5px;
+}
+
 form input[type="text"], input[type="number"] {
     height: 50px;
     width: 285px;
@@ -271,7 +287,7 @@ form input[type="text"]:focus, input[type="number"]:focus {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 75px;
 }
@@ -294,8 +310,8 @@ form input[type="text"]:focus, input[type="number"]:focus {
     display: none;
 }
 
-.active{
-    display: initial;
+.active {
+    display: block;
 }
 
 /* Utilities - end*/
