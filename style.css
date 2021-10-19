@@ -25,6 +25,10 @@ a {
 body {
     font-family: 'Yellowtail', 'sans-serif';
     background-color: var(--primary);
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header - start */
@@ -54,6 +58,7 @@ header h1 {
     background-color: var(--secondary);
     color: var(--primary);
 }
+
 
 /* Header - end */
 
@@ -97,17 +102,21 @@ header h1 {
     cursor: pointer;
 }
 
+#books .book .btn-read:hover{
+    color: #210f04;
+    opacity: 0.8;
+}
+
 /* Books - end*/
 
 /* Footer - start */
 
 footer {
-    margin-bottom: 10px;
     position: absolute;
     bottom: 0;
-    left: 0;
-    display: flex;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 footer p {

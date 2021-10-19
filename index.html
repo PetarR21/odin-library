@@ -22,16 +22,7 @@
     <div class="container flex">
         <button class="btn btn-add-group" id="btn-add">Add New Book</button>
     </div>
-    <div id="books" class="container grid inital">
-        <!--<div class="book">
-            <p id="book-title">Title</p>
-            <p id="book-author">Author</p>
-            <p id="book-pages">321 pages</p>
-            <button class="btn btn-read">READ</button>
-            <button class="btn btn-remove">REMOVE</button>
-        </div>  -->
-
-    </div>
+    <div id="books" class="container grid inital"></div>   
     <div id="fixed-btn-container">
         <button class="btn btn-add-group" id="fixed-add-btn">
             +
@@ -40,12 +31,11 @@
     <footer>
         <div class="container flex">
             <p>Copyright &copy; 2021 PetarR21 <a href="https://github.com/PetarR21/odin-library" target="_blank">
-                <i class="fab fa-github fa-1x"></i></a></p>
+                    <i class="fab fa-github fa-1x"></i></a></p>
         </div>
     </footer>
 
     <div id="overlay" class="hidden"></div>
-
 
     <div id="form" class="hidden">
         <form action="" method="get">
@@ -55,7 +45,7 @@
                 <div id="title-warning" class="hidden">Book with given title already exists!</div>
             </div>
             <input type="text" id="input-author" placeholder="Author" required>
-            <input type="number" id="input-pages" placeholder="Pages" required>
+            <input type="number" id="input-pages" placeholder="Pages" required min="0">
             <div id="div-read">
                 <label for="input-read">Have you read it?</label>
                 <input type="checkbox" id="input-read" name="input-read">
@@ -65,7 +55,6 @@
             </div>
         </form>
     </div>
-
 
 </body>
 
